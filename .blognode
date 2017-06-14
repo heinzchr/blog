@@ -3,6 +3,7 @@
     "out": "/docs",
     "include": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "preview.png"
     ]
 }
