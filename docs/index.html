@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="Blognode - Jan Hommes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+
+    <title>foobar - blog</title>
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="assets/fonts/Sansation_Light.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/blognode.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+
+<body class="bn-fade-in">
+    <div class="container-fluid">
+
+        <!-- header -->
+        <div class="row bn-header" bn-content="Header, { src: &quot;layout/header.html&quot; }">
+
+            <div class="col-md-offset-2 col-md-2 text-center">
+
+                <!-- header-image -->
+                <ul class="bn-progress bn-progress-slow">
+                    <li>
+                        <svg viewbox="-10 -10 220 220">
+                <g fill="none" stroke-width="4" transform="translate(100,100)">
+                    <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                    <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                    <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                    <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                    <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                    <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                </g>
+            </svg>
+                        <svg viewbox="-10 -10 220 220">
+                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="0"/>
+            </svg>
+                        <div class="bn-header-image animated" bn-edit="Image" style="background-image:url(&apos;assets/img/simpsons.jpg&apos;);">
+
+                        </div>
+                    </li>
+                </ul>
+                <!-- /header-image -->
+
+            </div>
+
+            <div class="col-md-6">
+                <h1 bn-edit="Headline, { placeholder: &apos;Page Headline&apos; }" class="bn-headline">foobar</h1>
+                <p bn-edit="Teaser" class="lead animated">This is a sample for Blognode and shows how to use it. You can use this template by forking it.</p>
+            </div>
+        </div>
+        <!-- /header -->
+
+        <!-- /content -->
+        <div bn-collection="Stories, { src: &quot;stories/&quot;, start: &quot;true&quot;, name: &quot;${Date}-${Headline}.html&quot;, sort: &quot;Date desc&quot; }">
+            <template>
+				<div class="row animated">
+					<div class="col-md-offset-1 col-md-2 bn-date text-right">
+						<h4 bn-date="Date, { format: &apos;DD/MM/YYYY&apos;, timeago: 2}">
+							10/11/2017
+						</h4>
+
+						<div class="bn-line hidden-xs hidden-sm">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20">
+								<path d="M5 0 L18 12 L5 24 Z"/>
+							</svg>
+						</div>
+
+						<div>
+							<span class="label label-default">blognode</span>
+							<span class="label label-default">example</span>
+						</div>
+
+						<h6>
+							by <span bn-edit="Author">Jan</span>
+						</h6>
+					</div>
+
+					<div class="col-md-7 bn-article">
+						<article>
+							<h2 bn-edit="Headline">Add a new blog entry</h2>
+							<p bn-edit="Article">
+								Click here to add a new blog entry
+							</p>
+						</article>
+					</div>
+				</div>
+			</template>
+
+            <div class="row animated" bn-content="06-14-2016-get-started.html, { src: &apos;stories/06-14-2016-get-started.html&apos; }">
+                <div class="col-md-offset-1 col-md-2 bn-date text-right">
+                    <h4 bn-date="Date, { format: &apos;DD/MM/YYYY&apos;, timeago: 2}">18 hours ago</h4>
+
+                    <div class="bn-line hidden-xs hidden-sm">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20">
+								<path d="M5 0 L18 12 L5 24 Z"/>
+							</svg>
+                    </div>
+
+                    <div>
+                        <span class="label label-default">blognode</span>
+                        <span class="label label-default">example</span>
+                    </div>
+
+                    <h6>
+                        by <span bn-edit="Author">Jan</span>
+                    </h6>
+                </div>
+
+                <div class="col-md-7 bn-article">
+                    <article>
+                        <h2 bn-edit="Headline">Get Started</h2>
+                        <p bn-edit="Article">
+                            TODO...
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row animated" bn-content="06-12-2017-about.html, { src: &apos;stories/06-12-2017-about.html&apos; }">
+                <div class="col-md-offset-1 col-md-2 bn-date text-right">
+                    <h4 bn-date="Date, { format: &apos;DD/MM/YYYY&apos;, timeago: 2}">12/06/2017</h4>
+
+                    <div class="bn-line hidden-xs hidden-sm">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20">
+								<path d="M5 0 L18 12 L5 24 Z"/>
+							</svg>
+                    </div>
+
+                    <div>
+                        <span class="label label-default">blognode</span>
+                        <span class="label label-default">example</span>
+                    </div>
+
+                    <h6>
+                        by <span bn-edit="Author">Jan</span>
+                    </h6>
+                </div>
+
+                <div class="col-md-7 bn-article">
+                    <article>
+                        <h2 bn-edit="Headline">About</h2>
+                        <p bn-edit="Article">
+                            <img src="assets/img/bridge.jpg" style="max-width: 100%;"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                            <blockquote>
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                nulla facilisis.
+                            </blockquote>
+
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem
+                            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row animated" bn-content="06-10-2017-welcome.html, { src: &apos;stories/06-10-2017-welcome.html&apos; }">
+                <div class="col-md-offset-1 col-md-2 bn-date text-right">
+                    <h4 bn-date="Date, { format: &apos;DD/MM/YYYY&apos;, timeago: 2}">10/06/2017</h4>
+
+                    <div class="bn-line hidden-xs hidden-sm">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20">
+								<path d="M5 0 L18 12 L5 24 Z"/>
+							</svg>
+                    </div>
+
+                    <div>
+                        <span class="label label-default">blognode</span>
+                        <span class="label label-default">example</span>
+                    </div>
+
+                    <h6>
+                        by <span bn-edit="Author">Jan</span>
+                    </h6>
+                </div>
+
+                <div class="col-md-7 bn-article">
+                    <article>
+                        <h2 bn-edit="Headline">Welcome</h2>
+                        <p bn-edit="Article">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit
+                            in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+                            qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                            <blockquote>
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                nulla facilisis.
+                            </blockquote>
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+
+    </div>
+</body>
+
+</html>
