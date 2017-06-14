@@ -1,0 +1,8 @@
+{
+    "entry": "index.html",
+    "out": "/dist",
+    "include": [
+        "assets",
+        "favicon.ico"
+    ]
+}

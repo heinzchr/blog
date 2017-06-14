@@ -1,0 +1,191 @@
+﻿/**
+ * Blognode default template css file.
+ *
+ * blognode.de
+**/
+
+/* main */
+@font-face {
+	font-family: Sansation;
+	src: url('../fonts/sansation_light-webfont.ttf')  format('truetype');
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Segoe UI Light','Segoe WP Light','Segoe UI','Segoe','Segoe WP','Tahoma','Verdana','Arial','sans-serif';
+	color: #333333;
+	font-size:1em;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Sansation, 'Segoe UI Light','Segoe WP Light','Segoe UI','Segoe','Segoe WP','Tahoma','Verdana','Arial','sans-serif';
+	color:#93A2AC;
+}
+
+article {
+    text-align: justify;
+}
+
+.bn-loading-text {
+	margin:2rem;
+}
+
+.bn-headline {
+	font-size:2.5em;
+	text-align:center;
+}
+
+.bn-header {
+	background-color:#F1F1F1;
+}
+
+.bn-line {
+	background-color:#777;
+	width:4px;
+	height:120px;
+	position:absolute;
+	top:40px;
+	width:4px;
+	right:-4px;
+	z-index:2;
+	opacity:0.5;
+}
+
+.bn-line svg {
+	stroke:#ddd;
+	stroke-width:1;
+	color:#ddd;
+	fill:#ddd;
+	padding-top:5px;
+}
+
+
+.bn-header-image {
+	background-size: cover;
+	border-radius:10rem;
+	width: 10rem;
+    height: 10rem;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	border: 8px solid #DDD;
+}
+
+/* extra padding and sizing on large devices */
+@media only all and (min-width: 1000px) {
+	.bn-date {
+		padding:35px 20px;
+	}
+	.bn-article {
+		border-left:4px solid #F1F1F1;
+		padding:20px 50px;
+	}
+	.bn-headline {
+		font-size:3.5em;
+		text-align:left;
+	}
+}
+
+/* progress animation */
+@-webkit-keyframes load{0%{stroke-dashoffset:0}}
+@keyframes load{0%{stroke-dashoffset:0}}
+
+.bn-progress {
+	margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+.bn-progress>li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-family: Sansation;
+    font-weight:100;
+}
+
+.bn-progress>li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bn-progress svg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.bn-progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+.bn-progress svg:nth-child(2) path  {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #F1F1F1;
+    opacity:.9;
+}
+.bn-progress-fast svg:nth-child(2) path {
+    -webkit-animation: load 1s;
+    -moz-animation: load 1s;
+    -o-animation: load 1s;
+    animation: load 1s;
+}
+
+.bn-progress-med svg:nth-child(2) path {
+    -webkit-animation: load 10s;
+    -moz-animation: load 10s;
+    -o-animation: load 10s;
+    animation: load 10s;
+}
+
+.bn-progress-slow svg:nth-child(2) path {
+    -webkit-animation: load 20s;
+    -moz-animation: load 20s;
+    -o-animation: load 20s;
+    animation: load 20s;
+}
+
+/* start fade in animation */
+.bn-fade-in {
+	-webkit-animation: fadein 1.0s;
+       -moz-animation: fadein 1.0s;
+            animation: fadein 1.0s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
