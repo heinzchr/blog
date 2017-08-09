@@ -1,6 +1,6 @@
 {
     "entry": "index.html",
-    "out": "/docs",
+    "out": "./docs",
     "include": [
         "assets",
         "favicon.ico",
